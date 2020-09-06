@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ambali IOT - Remote Watering</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" type = "text/css" href = "https://raw.githubusercontent.com/LCHUKKA/plantswateringiot/master/style.css">
+        <style>
+            :root {
+                --bgclr: coral;
+                --mbgclr:rgb(80,162,255);
+                --nbgclr:#ec1616;
+                --txtclr:white;
+                --main-padding: 15px;
+            }
+            html {
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                background-color: #000000;
+                color:var(--txtclr);
+                display: inline-block;
+                margin: 0px auto;
+                text-align: center;
+            }
+            .button {
+                padding: 10px 22px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-family: Verdana;
+                font-size: 12px;
+                font-weight: bold;
+                margin: 4px 4px;
+                cursor: pointer;
+                border-radius: 4px;
+                background-color: transparent;
+                color:var(--txtclr);
+            }
+            .b1 {
+                border: 2px solid var(--mbgclr);
+            }
+            .b2 {
+                border: 2px solid var(--bgclr);
+            }
+            .b1:hover{background-color:var(--mbgclr);text-transform:uppercase;}
+            .b2:hover{background-color:var(--bgclr);text-transform:uppercase;}
+            form p {
+                text-decoration: none;
+                color: rgb(0, 255, 157);
+                font-size: 16px;
+                margin: 2px;
+                cursor: pointer;
+            }
+            header p{font-size: 22px;}
+            a:visited{color:var(--txtclr);}
+            a:hover, a:focus, a:active{color:var(--txtclr);}
+            .logo{color:var(--txtclr);text-decoration:none;background-color:var(--bgclr);}
+            .status{text-decoration:underline;}
+            .calign{
+                justify-content:center;
+                align-items:center;
+            }
+        </style>
+    </head>
+<body>
+    <div class="calign">
+        <header><p>IOT Remote Watering System</p></header>
+        <form>
+            <p> Watering is currently <span class="status">"+LED_ONE_STATE+"</span></p>
+            <button class="button b1" name="start" value="1" type="submit">Start Watering</button>
+            <button class="button b2" name="start" value="0" type="submit">Stop Watering</button>
+        </form>
+        <footer><h5>&copy; All copyrights reserved to <a class="logo" href="https://ambali.co.in">Ambali Corp.</a></h5></footer>
+    </div>
+</body>
+</html>
